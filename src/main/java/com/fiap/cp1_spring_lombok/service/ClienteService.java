@@ -1,11 +1,15 @@
 package com.fiap.cp1_spring_lombok.service;
 
 import com.fiap.cp1_spring_lombok.model.ClienteModel;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Service
+@RequiredArgsConstructor
 public class ClienteService {
 
     private Long contadorId = 1L;
